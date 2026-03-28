@@ -1401,13 +1401,13 @@ Acceleo 4 does not allow pre-conditions on templates.
 Acceleo 3 used an implicit String-typed variable so the post expression could be a simple call without a variable:
 
 ----
-[template public aTemplateName(...) post (trim())]
+[template public aTemplateName(...) post(trim())]
 ----
 
 Acceleo 4 doesn't allow implicit variables. The result of the template call will be stored in the `self` variable and the migration will thus transform this expression into:
 
 ----
-[template public aTemplateName(...) post (self.trim())]
+[template public aTemplateName(...) post(self.trim())]
 ----
 
 ===== Init block
