@@ -476,7 +476,7 @@ The template signature must include the visibility and the name, and can optiona
 <template documentation>
 @param class <documentation of the parameter>
 /]
-[template public generate(class : ecore::EClass) post (self.trim())]
+[template public generate(class : ecore::EClass) post(self.trim())]
 [/template]
 ----
 
@@ -855,7 +855,7 @@ Also a <<module-2,Module>> can contain a template used as entry point of the gen
 ----
 <<template-2,Template>> =
 
-'[template ' <<visibility,Visibility>> <<identifier,Identifier>> '(' <<parameter,Parameter>>(',' <<parameter,Parameter>>)* ')' ('post (' <<aql-expression,AQL Expression>> ')')? ']'
+'[template ' <<visibility,Visibility>> <<identifier,Identifier>> '(' <<parameter,Parameter>>(',' <<parameter,Parameter>>)* ')' ('post(' <<aql-expression,AQL Expression>> ')')? ']'
 
 (<<statement,Statement>>)*
 
